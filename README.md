@@ -1,2 +1,3 @@
-# serial
-Java deserialization examples
+# Insecure deserialization labs
+
+See the directories
