@@ -10,7 +10,6 @@ public class SafeObjectInputStream extends ObjectInputStream {
   protected Class<?> resolveClass(ObjectStreamClass input)
                                   throws IOException, ClassNotFoundException
   {
-    System.out.println(input.getName());
     if (!input.getName().equals(Planet.class.getName())) {
       throw new InvalidClassException("Unsupported class", input.getName());
     }
