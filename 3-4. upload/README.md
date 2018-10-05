@@ -13,26 +13,27 @@ javac SerialGenerator.java
 java SerialGenerator
 ```
 
-Feed the data to UploadManager:
+Feed the serialized planets to UploadManager:
 ```
 echo <data> | java UploadManager
 ...
 ```
 
+You can just pipe all data from SerialGenerator to UploadManager:
 ```
-java UploadManager < file
-```
-
-Uncomment bad stuff in SerialGenerator, recompile and feed the new data to UploadManager:
-```
-java SerialGenerator > objects
-java UploadManager < objects
+java SerialGenerator | java UploadManager
 ```
 
-The above command never exits. In a different shell, see what's consuming the resources:
+Uncomment bad stuff in SerialGenerator, recompile and pipe the new data to UploadManager:
+```
+java SerialGenerator | java UploadManager
+```
+
+The above command never exits. In a different shell, see what's consuming 100% CPU:
 ```
 top
 ```
+(press 'c' to make _top_ display the process' command line)
 
 More DoS payloads:
 - https://www.owasp.org/index.php/Deserialization_of_untrusted_data
@@ -55,7 +56,7 @@ Replace oIn in UploadManager.java:
 Recompile UploadManager and try it again:
 ```
 javac UploadManager.java
-java UploadManager < objects
+java SerialGenerator | java UploadManager
 ```
 
 It should now exit with an error instead of hanging.

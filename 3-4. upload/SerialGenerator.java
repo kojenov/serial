@@ -3,6 +3,7 @@ import java.util.*;
 
 public class SerialGenerator {
 
+  @SuppressWarnings("unchecked")
   static Object badObject() {
     Set root = new HashSet();
     Set s1 = root;

@@ -31,6 +31,6 @@ public class Planet implements java.io.Serializable {
   }
 
   public String toString() {
-    return order + ". " + name + " (" + nickname + "): " + mass;
+    return name + " (" + nickname + ")";
   }
 }

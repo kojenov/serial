@@ -6,7 +6,12 @@ javac BasicSerialize.java
 java BasicSerialize
 ```
 
-Take a look at the created file in hex and notice the pattern "ac ed 00 05":
+Use _file_ utility to check the created file:
+```
+file earth.ser
+```
+
+Take a look it in hex and notice the pattern "ac ed 00 05":
 ```
 xxd -g 1 earth.ser
 ```

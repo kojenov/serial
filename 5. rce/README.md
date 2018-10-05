@@ -16,7 +16,7 @@ In a separate window, start monitoring the application log:
 tail -f /var/log/planets/app.log
 ```
 
-Feed the data to UploadManager:
+Feed the generated data to UploadManager:
 ```
 echo <data> | java UploadManager
 ```
@@ -24,8 +24,8 @@ echo <data> | java UploadManager
 Uncomment the following from SerialGenerator:
 ```
 serializeAnything("Pluto",
-                  new Planet(9, "; echo I am a planet! > /tmp/pwned; cat /dev/null",
-                             "Muhaha!", 1337));
+                  new Planet(9, "; notify-send \"You've been pwned!\"; cat /dev/null",
+                             "I'm still a planet, muhaha!", 1337));
 ```
 
-Recompile and try again. Notice the applicaiton log and check /tmp/pwned
+Recompile and try again. Notice the notification pop-up!

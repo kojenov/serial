@@ -26,7 +26,7 @@ java -jar ../jdeserialize-1.2.jar cookie.ser
 
 Open the cookie (serialized object) in a hex editor:
 ```
-ghex cookie.ser &
+ghex cookie.ser
 ```
 
 Replace the contents as follows:
