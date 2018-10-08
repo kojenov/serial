@@ -1,6 +1,6 @@
 # Insecure deserialization labs
 
-See the directories and follow instructions
+Code for my [AppSec USA 2018 talk](https://appsecus2018.sched.com/event/F04J/deserialization-what-how-and-why-not)
 
 ## Links
 
