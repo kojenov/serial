@@ -9,7 +9,7 @@ public class Session {
   public Session(String username, String password) {
     user = authenticate(username, password);
     if (user != null) {
-      log("You have logged in, here is your SESSION cookie:");
+      log("Hello " + user.username + ", here is your SESSION cookie:");
       log(serialize(user));
     }
   }
@@ -72,7 +72,7 @@ public class Session {
 
   // logging
   static void log(String msg) {
-    System.out.println(msg + "\n");
+    System.out.println(msg);
   }
 
   // ...
@@ -84,5 +84,6 @@ public class Session {
     else {
       Session session = new Session(args[0]);
     }
+    log("");
   }
 }
