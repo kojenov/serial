@@ -1,4 +1,4 @@
-# Lab 5. Real-life RCE
+# Lab 6. Real-life RCE
 
 Download [the exploit](https://github.com/chrisjd20/cve-2017-9805.py/blob/master/cve-2017-9805.py).
 
