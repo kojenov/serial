@@ -1,6 +1,8 @@
 # Insecure deserialization labs
 
-Code for my [AppSec USA 2018 talk](https://appsecus2018.sched.com/event/F04J/deserialization-what-how-and-why-not)
+This is the code for my [AppSec USA 2018 talk](https://appsecus2018.sched.com/event/F04J/deserialization-what-how-and-why-not)
+
+The slides are [here](https://drive.google.com/open?id=1o8VPE4nwNLb9cAYfG-3gM4WR4CY7FwoT)
 
 ## Links
 
