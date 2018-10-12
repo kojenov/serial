@@ -43,9 +43,9 @@ public class Session {
     try {
       ByteArrayOutputStream bOut = new ByteArrayOutputStream();
       ObjectOutput oOut = new ObjectOutputStream(bOut);
-      oOut.writeObject(user);
+      oOut.writeObject(user);   // actual serialization
       oOut.flush();
-      userBytes = bOut.toByteArray();  // actual serialization
+      userBytes = bOut.toByteArray();
       oOut.close();
       bOut.close();
     } catch (Exception e) {
