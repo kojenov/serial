@@ -4,6 +4,8 @@ This is the code for my [AppSec USA 2018 talk](https://appsecus2018.sched.com/ev
 
 The slides are [here](https://drive.google.com/open?id=1o8VPE4nwNLb9cAYfG-3gM4WR4CY7FwoT)
 
+The video recording is [here](https://youtu.be/t-zVC-CxYjw)
+
 ## Links
 
 * [OWASP - Deserialization of untrusted data](https://www.owasp.org/index.php/Deserialization_of_untrusted_data)
